@@ -11,7 +11,7 @@ Settings come from ~/.grc_mcp.json (or the file named by GRC_MCP_CONFIG) and can
       "list_port": 14900,       GRC_LIST_PORT
       "account": "...",         GRC_ACCOUNT
       "password": "...",        GRC_PASSWORD
-      "server": "Dev SlimeKing" GRC_SERVER        name (or part of it) of the server in the list
+      "server": "My Server"   GRC_SERVER        name (or part of it) of the server in the list
     }
 """
 

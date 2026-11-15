@@ -252,4 +252,11 @@ All strings are `char*` / `const char*` encoded as protocol-compatible single-by
 | `rc_read_comma_text` | Reads and decodes comma-text from raw data. |
 | `rc_free` | Frees memory returned by grclib. |
 
-See `examples\python_example.py` for a compact ctypes client.
+See `examples/python_example.py` for a compact ctypes client.
+
+## MCP Server Example
+
+`examples/grc_mcp.py` is a Model Context Protocol server (stdio, Python only) over grclib. It logs in as RC and NC, runs RC commands, and reads and writes NPC, class, and weapon scripts. Settings come from `~/.grc_mcp.json`, the file named by `GRC_MCP_CONFIG`, or the `GRC_*` environment variables listed at the top of the script. Keep the settings file out of the repository.
+
+Register it with an MCP client by running `python examples/grc_mcp.py` as a stdio server.
+
